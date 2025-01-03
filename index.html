@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kasper | Template Two</title>
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="./dist/all.min.css" />
+    <!-- Custom Styles -->
+    <link href="./dist/output.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-sans">
+    <!-- Start Header -->
+    <header class="absolute left-0 w-full z-10">
+      <div
+        class="container flex items-center justify-between min-h-[97px] md:border-b md:border-gray-400 relative"
+      >
+        <a href="#" class="logo">
+          <img src="images/logo.png" class="h-10" alt="Logo" />
+        </a>
+        <nav class="flex items-center">
+          <i class="fas fa-bars toggle-menu"></i>
+          <ul
+            class="hidden md:flex md:gap-5 text-white transition-all duration-300"
+          >
+            <li><a class="nav-link" href="#home">Home</a></li>
+            <li><a class="nav-link" href="#services">Services</a></li>
+            <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li><a class="nav-link" href="#About">About</a></li>
+            <li><a class="nav-link" href="#pricing">Pricing</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+          <div class="form-search">
+            <i class="fas fa-search text-white"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- End Header -->
+    <!-- Start Landing -->
+    <div
+      class="landing bg-[#1f2021] relative min-h-screen bg-cover bg-[url('../images/landing.jpg')]"
+      id="home"
+    >
+      <div class="overlay absolute inset-0 w-full h-full bg-black/60"></div>
+      <div
+        class="text absolute left-0 top-1/2 -translate-y-1/2 w-full sm:w-1/2 p-12 bg-secondary text-white flex justify-end"
+      >
+        <div class="content max-w-full sm:max-w-[500px]">
+          <h2 class="text-[32px] font-normal mb-5 leading-[1.5]">
+            Hello World!<br />
+            We Are Kasper We Make Art.
+          </h2>
+          <p class="text-sm leading-[2]">
+            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+            Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+            Curabitur aliquet quam. Accumsan id imperdiet et, porttitor at sem.
+            Mauris blandit aliquet elit, eget tincidunt.
+          </p>
+        </div>
+      </div>
+      <i class="fas fa-angle-left change-background left-8 fa-2x"></i>
+      <i class="fas fa-angle-right change-background right-8 fa-2x"></i>
+      <ul
+        class="bullets absolute left-1/2 -translate-x-1/2 bottom-8 flex gap-3"
+      >
+        <li class="bullet"></li>
+        <li class="bullet bg-primary border-primary"></li>
+        <li class="bullet"></li>
+      </ul>
+    </div>
+    <!-- End Landing -->
+    <!-- Start Services -->
+    <div class="services py-24" id="services">
+      <div class="container">
+        <div class="main-heading text-center">
+          <h2>Services</h2>
+          <p>
+            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+            Mauris blandit aliquet elit, eget tincidunt.
+          </p>
+        </div>
+
+        <div
+          class="services-container grid md:grid-cols-2 lg:grid-cols-3 gap-10"
+        >
+          <div class="srv-box">
+            <i class="fas fa-desktop fa-3x"></i>
+            <div class="text">
+              <h3 class="mb-2 font-bold text-primary">Vorem amet intuitive</h3>
+              <p class="leading-[1.6] text-gray-400">
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                Curabitur aliquet quam.
+              </p>
+            </div>
+          </div>
+          <div class="srv-box">
+            <i class="fas fa-cog fa-3x"></i>
+            <div class="text">
+              <h3 class="mb-2 font-bold text-primary">Vorem amet intuitive</h3>
+              <p class="leading-[1.6] text-gray-400">
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                Curabitur aliquet quam.
+              </p>
+            </div>
+          </div>
+          <div class="srv-box">
+            <i class="fas fa-pencil-ruler fa-3x"></i>
+            <div class="text">
+              <h3 class="mb-2 font-bold text-primary">Vorem amet intuitive</h3>
+              <p class="leading-[1.6] text-gray-400">
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                Curabitur aliquet quam.
+              </p>
+            </div>
+          </div>
+          <div class="srv-box">
+            <i class="fas fa-camera fa-3x"></i>
+            <div class="text">
+              <h3 class="mb-2 font-bold text-primary">Vorem amet intuitive</h3>
+              <p class="leading-[1.6] text-gray-400">
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                Curabitur aliquet quam.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Services -->
+    <!-- Start Design -->
+    <div
+      class="design py-24 h-[600px] relative bg-cover bg-[url('../images/design-features.jpg')] flex items-center overflow-hidden"
+    >
+      <div class="overlay absolute inset-0 w-full h-full bg-black/60"></div>
+      <div class="image relative z-10 flex-1 hidden md:block">
+        <img
+          src="images/mobile.png"
+          class="relative -bottom-[150px] left-1/2 -translate-x-1/2"
+          alt="Mobile"
+        />
+      </div>
+      <div class="text relative z-10 flex-1 p-[50px] text-white bg-secondary">
+        <h2 class="font-normal uppercase text-xl mb-5">
+          Our Design Comes With...
+        </h2>
+        <ul class="space-y-3">
+          <li>Responsive Design</li>
+          <li>Modern And Clean Design</li>
+          <li>Clean Code</li>
+          <li>Browser Friendly</li>
+        </ul>
+      </div>
+    </div>
+    <!-- End Design -->
+    <!-- Start Portfolio -->
+    <div class="portfolio py-24" id="portfolio">
+      <div class="container">
+        <div class="main-heading text-center">
+          <h2>Portfolio</h2>
+          <p>
+            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+            Mauris blandit aliquet elit, eget tincidunt.
+          </p>
+        </div>
+        <ul class="shuffle flex justify-center cursor-pointer">
+          <li class="active bg-primary text-white">All</li>
+          <li>App</li>
+          <li>Photo</li>
+          <li>Web</li>
+          <li>Print</li>
+        </ul>
+      </div>
+      <div class="imgs-container flex flex-wrap mt-14">
+        <div class="box-portfolio">
+          <img src="images/shuffle-01.jpg" alt="" />
+          <div class="caption">
+            <h4>Awesome Image</h4>
+            <p>Photography</p>
+          </div>
+        </div>
+        <div class="box-portfolio">
+          <img src="images/shuffle-02.jpg" alt="" />
+          <div class="caption">
+            <h4>Awesome Image</h4>
+            <p>Photography</p>
+          </div>
+        </div>
+        <div class="box-portfolio">
+          <img src="images/shuffle-03.jpg" alt="" />
+          <div class="caption">
+            <h4>Awesome Image</h4>
+            <p>Photography</p>
+          </div>
+        </div>
+        <div class="box-portfolio">
+          <img src="images/shuffle-04.jpg" alt="" />
+          <div class="caption">
+            <h4>Awesome Image</h4>
+            <p>Photography</p>
+          </div>
+        </div>
+        <div class="box-portfolio">
+          <img src="images/shuffle-05.jpg" alt="" />
+          <div class="caption">
+            <h4>Awesome Image</h4>
+            <p>Photography</p>
+          </div>
+        </div>
+        <div class="box-portfolio">
+          <img src="images/shuffle-06.jpg" alt="" />
+          <div class="caption">
+            <h4>Awesome Image</h4>
+            <p>Photography</p>
+          </div>
+        </div>
+        <div class="box-portfolio">
+          <img src="images/shuffle-07.jpg" alt="" />
+          <div class="caption">
+            <h4>Awesome Image</h4>
+            <p>Photography</p>
+          </div>
+        </div>
+        <div class="box-portfolio">
+          <img src="images/shuffle-08.jpg" alt="" />
+          <div class="caption">
+            <h4>Awesome Image</h4>
+            <p>Photography</p>
+          </div>
+        </div>
+      </div>
+      <a
+        href="#"
+        class="more bg-primary text-white py-4 px-5 block w-fit mx-auto mt-12 uppercase"
+        >More</a
+      >
+    </div>
+    <!-- End Portfolio -->
+    <!-- Start Video -->
+    <div class="video relative">
+      <div class="overlay absolute inset-0 w-full h-full bg-black/60"></div>
+      <video autoplay muted loop class="w-full">
+        <source src="images/awesome-video.mp4" type="video/mp4" />
+      </video>
+      <div
+        class="text absolute top-1/2 -translate-y-1/2 w-full p-[50px] bg-secondary text-white text-center"
+      >
+        <h2 class="font-normal uppercase">Super Awesome Video Here</h2>
+        <p class="my-7">Its All You Need</p>
+        <button class="bg-black text-white py-2 px-4 uppercase">
+          See More
+        </button>
+      </div>
+    </div>
+    <!-- End Video -->
+    <!-- Start About -->
+    <div class="about pt-24 overflow-hidden text-center" id="About">
+      <div class="container">
+        <div class="main-heading">
+          <h2>About Us</h2>
+          <p>
+            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+            Mauris blandit aliquet elit, eget tincidunt.
+          </p>
+        </div>
+        <img
+          src="images/about.png"
+          class="relative left-1/2 -translate-x-1/2 bottom-[-60px] sm:bottom-[-120px] mt-[-60px] sm:mt-[-120px] max-w-full"
+          alt=""
+        />
+      </div>
+    </div>
+    <!-- End About -->
+    <!-- Start Stats -->
+    <div
+      class="stats py-24 relative text-center bg-cover bg-[url('../images/stats.png')]"
+    >
+      <div class="overlay absolute inset-0 w-full h-full bg-black/70"></div>
+      <div class="container relative flex justify-center flex-wrap">
+        <div class="box">
+          <i class="fas fa-mug-hot"></i>
+          <div class="number">1.236</div>
+          <p>Coffee Drinks</p>
+        </div>
+        <div class="box">
+          <i class="far fa-folder"></i>
+          <div class="number">256</div>
+          <p>Completed Projects</p>
+        </div>
+        <div class="box">
+          <i class="far fa-envelope"></i>
+          <div class="number">1,743</div>
+          <p>Mail Sent</p>
+        </div>
+        <div class="box">
+          <i class="fas fa-trophy"></i>
+          <div class="number">17</div>
+          <p>Awards Received</p>
+        </div>
+      </div>
+    </div>
+    <!-- End Stats -->
+    <!-- Start Skills -->
+    <div class="our-skills py-24">
+      <div class="container flex justify-between flex-wrap">
+        <div class="testimonials">
+          <h3>Testimonials</h3>
+          <p>
+            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+            Mauris blandit aliquet elit, eget tincidunt.
+          </p>
+          <div class="content">
+            <img src="images/skills-01.jpg" alt="" />
+            <div class="text">
+              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+              Mauris blandit aliquet elit, eget tincidunt.
+              <p>John Doe, CEO</p>
+            </div>
+          </div>
+          <div class="content">
+            <img src="images/skills-02.jpg" alt="" />
+            <div class="text">
+              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+              Mauris blandit aliquet elit, eget tincidunt.
+              <p>John Doe, CEO</p>
+            </div>
+          </div>
+          <ul class="bullets flex justify-center gap-2 my-12">
+            <li></li>
+            <li class="active"></li>
+            <li></li>
+          </ul>
+        </div>
+        <div class="skills">
+          <h3>Skills</h3>
+          <p>
+            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+            Mauris blandit aliquet elit, eget tincidunt.
+          </p>
+          <div class="flex flex-col space-y-10 pt-3">
+            <div class="prog-holder">
+              <h4>Adobe</h4>
+              <div class="prog">
+                <span style="width: 90%" data-progress="90%"></span>
+              </div>
+            </div>
+            <div class="prog-holder">
+              <h4>Html &amp; Css</h4>
+              <div class="prog">
+                <span style="width: 85%" data-progress="85%"></span>
+              </div>
+            </div>
+            <div class="prog-holder">
+              <h4>JavaScript</h4>
+              <div class="prog">
+                <span style="width: 80%" data-progress="80%"></span>
+              </div>
+            </div>
+            <div class="prog-holder">
+              <h4>Php</h4>
+              <div class="prog">
+                <span style="width: 90%" data-progress="90%"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Skills -->
+    <!-- Start Quote -->
+    <div
+      class="quote py-24 text-white relative text-center bg-cover bg-[url('../images/quote.jpg')]"
+    >
+      <div class="overlay absolute inset-0 w-full h-full bg-black/75"></div>
+      <div class="container relative">
+        <q class="text-3xl block mb-5"
+          >accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet
+          elit, eget tincidunt.</q
+        >
+        <span>John Doe</span>
+      </div>
+    </div>
+    <!-- End Quote -->
+    <!-- Start Pricing -->
+    <div class="pricing py-24" id="pricing">
+      <div class="container">
+        <div class="main-heading text-center">
+          <h2>Pricing</h2>
+          <p>
+            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+            Mauris blandit aliquet elit, eget tincidunt.
+          </p>
+        </div>
+        <div
+          class="plans grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5"
+        >
+          <div class="plan">
+            <div class="head">
+              <h3>Basic</h3>
+              <span>19</span>
+            </div>
+            <ul>
+              <li>Feature No 1</li>
+              <li>Extra Feature</li>
+              <li>Extra Feature No 2</li>
+              <li>Feature</li>
+            </ul>
+            <div class="foot">
+              <a href="#">Buy Now</a>
+            </div>
+          </div>
+          <div class="plan">
+            <div class="head">
+              <h3>Premium</h3>
+              <span>29</span>
+            </div>
+            <ul>
+              <li>Feature No 1</li>
+              <li>Extra Feature</li>
+              <li>Extra Feature No 2</li>
+              <li>Feature</li>
+            </ul>
+            <div class="foot">
+              <a href="#">Buy Now</a>
+            </div>
+          </div>
+          <div class="plan">
+            <div class="head">
+              <h3>Pro</h3>
+              <span>39</span>
+            </div>
+            <ul>
+              <li>Feature No 1</li>
+              <li>Extra Feature</li>
+              <li>Extra Feature No 2</li>
+              <li>Feature</li>
+            </ul>
+            <div class="foot">
+              <a href="#">Buy Now</a>
+            </div>
+          </div>
+          <div class="plan">
+            <div class="head">
+              <h3>Platinum</h3>
+              <span>49</span>
+            </div>
+            <ul>
+              <li>Feature No 1</li>
+              <li>Extra Feature</li>
+              <li>Extra Feature No 2</li>
+              <li>Feature</li>
+            </ul>
+            <div class="foot">
+              <a href="#">Buy Now</a>
+            </div>
+          </div>
+        </div>
+        <p class="contact-text text-center text-xl mt-12">
+          Contact us if you have special request
+        </p>
+        <a
+          href="#"
+          class="contact-link block mx-auto bg-primary mt-8 text-white py-4 px-6 w-fit"
+        >
+          Contact Us
+        </a>
+      </div>
+    </div>
+    <!-- End Pricing -->
+    <!-- Start Subscribe -->
+    <div
+      class="subscribe py-24 relative text-white bg-cover bg-[url('../images/subscribe.jpg')]"
+    >
+      <div class="overlay absolute inset-0 w-full h-full bg-black/50"></div>
+      <div
+        class="container relative flex flex-col gap-5 text-center lg:text-start lg:flex-row items-center"
+      >
+        <form action="" class="flex w-[500x] max-w-full relative">
+          <i
+            class="far fa-envelope fa-lg absolute left-6 top-1/2 -translate-y-1/2"
+          ></i>
+          <input
+            type="email"
+            class="border border-white border-r-0 bg-transparent py-5 pe-5 ps-[60px] caret-primary w-[calc(100%-130px)] focus:outline-0 placeholder:text-white"
+            name="mail"
+            placeholder="Your Email"
+          />
+          <input
+            type="submit"
+            class="w-[130px] bg-primary text-white py-2 px-5 border border-white border-s-0 uppercase focus:outline-0"
+            value="Subscribe"
+          />
+        </form>
+        <p class="leading-[2]">
+          Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+          Mauris blan dit aliquet elit, eget tincidunt.
+        </p>
+      </div>
+    </div>
+    <!-- End Subscribe -->
+    <!-- Start Contact -->
+    <div class="contact py-24" id="contact">
+      <div class="container">
+        <div class="main-heading text-center">
+          <h2>Contact Us</h2>
+          <p>
+            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+            Mauris blandit aliquet elit, eget tincidunt.
+          </p>
+        </div>
+        <div class="content flex flex-col sm:flex-row gap-8 justify-between">
+          <form action="" class="basis-[70%]">
+            <input
+              class="main-input"
+              type="text"
+              name="name"
+              placeholder="Your Name"
+            />
+            <input
+              class="main-input"
+              type="email"
+              name="mail"
+              placeholder="Your Email"
+            />
+            <textarea
+              class="main-input h-[200px]"
+              name="message"
+              placeholder="Your Message"
+            ></textarea>
+            <input
+              type="submit"
+              class="bg-primary text-white p-5 flex ms-auto cursor-pointer uppercase"
+              value="Send Message"
+            />
+          </form>
+          <div
+            class="info basis-1/4 -order-1 text-center sm:order-2 sm:text-start"
+          >
+            <h4>Get In Touch</h4>
+            <span class="phone">+00 123.456.789</span>
+            <span class="phone">+00 123.456.789</span>
+            <h4 class="mt-7 sm:mt-20">Where We Are</h4>
+            <address class="leading-[2] text-gray-400">
+              Awesome Address 17<br />New York, NYC<br />123-4567-890<br />USA
+            </address>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Contact -->
+    <!-- Start Footer -->
+    <div
+      class="footer py-12 text-white relative text-center bg-cover bg-[url('../images/subscribe.jpg')]"
+    >
+      <div class="overlay absolute inset-0 w-full h-full bg-black/70"></div>
+      <div class="container relative">
+        <img src="images/logo.png" alt="Logo" class="mx-auto mb-5" />
+        <p
+          class="uppercase p-5 text-[22px] border-b border-white w-fit mx-auto my-5"
+        >
+          We Are Social
+        </p>
+        <div class="social-icons">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fas fa-home"></i>
+          <i class="fab fa-linkedin"></i>
+        </div>
+        <p class="copyright mt-14">
+          &copy; 2025 <span class="font-bold text-primary">Kasper</span> All
+          Right Reserved
+        </p>
+      </div>
+    </div>
+    <!-- End Footer -->
+  </body>
+</html>

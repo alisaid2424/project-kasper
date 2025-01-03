@@ -1,0 +1,228 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .nav-link {
+    @apply relative z-10 text-sm hover:border-b  py-[38px] hover:text-primary active:text-primary hover:border-primary active:border-primary transition-all duration-300;
+  }
+  .form-search {
+    @apply w-10 h-[30px] ms-7 ps-7 border-s pt-1 border-white hidden md:block;
+  }
+  .change-background {
+    @apply absolute top-1/2 -translate-y-1/2 text-gray-100 hidden sm:block;
+  }
+  .bullet {
+    @apply w-5 h-5 rounded-full border-2 border-white;
+  }
+  .toggle-menu {
+    @apply relative cursor-pointer text-white text-[22px] md:hidden;
+  }
+  .srv-box {
+    @apply flex flex-col text-center sm:flex-row sm:text-start gap-5;
+  }
+  .main-heading h2 {
+    @apply font-normal text-[40px] relative mb-[70px] uppercase;
+  }
+  .main-heading p {
+    @apply w-[550px] mx-auto mb-24 max-w-full leading-[2] text-gray-400;
+  }
+  .box-portfolio {
+    @apply relative overflow-hidden sm:basis-1/2  md:basis-1/3 lg:basis-1/4 cursor-pointer;
+  }
+  .portfolio .shuffle li {
+    @apply p-3;
+  }
+  .box-portfolio img {
+    @apply max-w-full transition-all duration-300;
+  }
+  .box-portfolio .caption {
+    @apply absolute left-0 w-full p-5 bg-white transition-all duration-300 -bottom-[100px];
+  }
+  .box-portfolio .caption h4 {
+    @apply font-normal mb-[10px];
+  }
+  .box-portfolio .caption p {
+    @apply text-primary;
+  }
+  .stats .box {
+    @apply text-white p-[50px] bg-secondary basis-full sm:basis-1/2  md:basis-1/3 lg:basis-1/4;
+  }
+  .stats .box i {
+    @apply w-10 h-10 rounded-full bg-black flex items-center justify-center mx-auto mb-7;
+  }
+  .stats .box .number {
+    @apply font-bold mb-5 text-[50px];
+  }
+  .stats .box p {
+    @apply text-sm;
+  }
+  .our-skills .container > div {
+    @apply basis-full lg:basis-[45%];
+  }
+  .our-skills .container > div > h3 {
+    @apply mb-7 text-center uppercase font-normal;
+  }
+  .our-skills .container > div > p {
+    @apply mb-[60px] text-center leading-[2] text-gray-400;
+  }
+  .our-skills .testimonials .content {
+    @apply flex flex-col text-center sm:flex-row sm:text-start items-center mb-7 gap-5;
+  }
+  .our-skills .testimonials .content img {
+    @apply w-40 h-40 rounded-full;
+  }
+  .our-skills .testimonials .text {
+    @apply leading-[1.8] border-b border-gray-200;
+  }
+  .our-skills .testimonials .text p {
+    @apply my-3 text-gray-400 text-sm text-center sm:text-right;
+  }
+  .our-skills .bullets li {
+    @apply w-[14px] h-[14px] rounded-full border-2 border-gray-500 cursor-pointer;
+  }
+  .our-skills .bullets li.active {
+    @apply border-primary bg-primary;
+  }
+  .our-skills .skills .prog-holder h4 {
+    @apply mb-3 font-normal uppercase;
+  }
+  .our-skills .skills .prog-holder .prog {
+    @apply h-7 bg-gray-200 rounded-md;
+  }
+  .our-skills .skills .prog-holder .prog span {
+    @apply block bg-primary rounded-md h-full relative;
+  }
+  .pricing .plans .plan {
+    @apply bg-gray-100 text-center;
+  }
+  .pricing .plans .plan .head {
+    @apply border-y border-primary py-10 px-5;
+  }
+  .pricing .plans .plan .head h3 {
+    @apply font-normal mb-5 uppercase;
+  }
+  .pricing .plans .plan .head span {
+    @apply text-6xl font-bold;
+  }
+  .pricing .plans .plan ul {
+    @apply divide-y w-fit mx-auto divide-primary;
+  }
+  .pricing .plans .plan ul li {
+    @apply p-5;
+  }
+  .pricing .plans .plan .foot a {
+    @apply py-5 border-y border-primary block font-bold text-primary;
+  }
+  .contact .content form .main-input {
+    @apply block p-5 border border-gray-300 w-full mb-7 focus:outline-0;
+  }
+  .contact .content .info h4 {
+    @apply uppercase mb-7 font-medium text-[18px];
+  }
+  .contact .content .info .phone {
+    @apply block mb-2 text-gray-400;
+  }
+  .footer .social-icons i {
+    @apply py-2 px-4;
+  }
+}
+
+@layer utilities {
+  @media (max-width: 767px) {
+    header nav .toggle-menu:hover + ul {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      position: absolute;
+      top: calc(100% - 25px);
+      left: 0;
+      width: 100%;
+      padding: 15px;
+      background-color: rgb(0 0 0 / 60%);
+    }
+    header nav .toggle-menu:hover + ul::before {
+      content: "";
+      position: absolute;
+      border-width: 12px;
+      border-style: solid;
+      border-color: transparent transparent rgb(0 0 0 / 60%) transparent;
+      right: 15px;
+      top: -24px;
+    }
+  }
+  .main-heading h2::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    background-color: #333;
+    bottom: -30px;
+    width: 120px;
+  }
+  .main-heading h2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    bottom: -38px;
+    background-color: white;
+  }
+
+  .design .text ul li::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f108";
+    font-weight: 900;
+    margin-right: 20px;
+    position: relative;
+    top: 1px;
+  }
+  .portfolio .imgs-container .box-portfolio:hover img {
+    transform: rotate(3deg) scale(1.1);
+  }
+
+  .portfolio .imgs-container .box-portfolio:hover .caption {
+    bottom: 0;
+  }
+  .our-skills .skills .prog-holder .prog span::before {
+    content: attr(data-progress);
+    position: absolute;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    top: -37px;
+    right: -13px;
+    padding: 4px 0;
+    padding: 2px 5px;
+    text-align: center;
+    border-radius: 4px;
+  }
+  .our-skills .skills .prog-holder .prog span::after {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 8px;
+    border-color: black transparent transparent;
+    right: -5px;
+    top: -15px;
+  }
+  .pricing .plans .plan .head span::before {
+    content: "$";
+    font-size: 25px;
+    position: relative;
+    top: -40px;
+    margin-right: 15px;
+    font-weight: normal;
+  }
+  .pricing .plans .plan .head span::after {
+    content: "/Mo";
+    font-size: 20px;
+    position: relative;
+    right: -15px;
+  }
+}
